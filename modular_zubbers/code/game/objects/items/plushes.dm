@@ -35,6 +35,14 @@
 	squeak_override = list('sound/machines/beep/beep.ogg' = 1)
 	gender = FEMALE
 
+/obj/item/toy/plush/sock_plush
+	name = "Baron Plush"
+	desc = "It's warm to the touch."
+	icon = 'modular_zubbers/icons/obj/toys/sock_plushi.dmi'
+	icon_state = "Baron"//Sprited by Unknown
+	squeak_override = list('modular_zubbers/icons/obj/toys/sound_vo_mobs_cat_roar1.ogg' = 1)
+	gender = MALE
+
 /obj/item/toy/plush/bigdeer
 	name = "big deer plushie"
 	desc = "An incredibly round deer plush. It appears to have had too many berries for snack time."

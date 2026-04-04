@@ -365,8 +365,7 @@
 		"Forensic Investigator",
 		"Cinder Dick",
 		"Cooperate Auditor",
-		"RHIB Agent",
-		"Counter-Intelligence Agent"
+		"RHIB Agent"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
@@ -382,8 +381,7 @@
 		"Cerberus",
 		"Slutcurity Officer",
 		"Studcurity Officer",
-		"Red Hawk Private",
-		"Exo-Suit Ensign"
+		"Red Hawk Private"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()

@@ -115,7 +115,7 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 				there are currently no credible threats to [station_name()]. \
 				All station construction projects have been authorized. Have a secure shift!",
 			"Security Report",
-			ANNOUNCER_COMMAND_REPORT, // SPLURT EDIT
+			SSstation.announcer.get_rand_report_sound(),
 			color_override = "green",
 		)
 	else if(CONFIG_GET(flag/roundstart_blue_alert))
@@ -132,7 +132,7 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 		priority_announce(
 			"A summary of the station's situation has been copied and printed to all communications consoles.",
 			"Security Report",
-			ANNOUNCER_COMMAND_REPORT, // SPLURT EDIT
+			SSstation.announcer.get_rand_report_sound(),
 		)
 
 #endif
