@@ -802,11 +802,6 @@
 
 /mob/living/proc/get_up(instant = FALSE)
 	set waitfor = FALSE
-	//VENUS ADDITION START
-	if(HAS_TRAIT(src, TRAIT_UNDER_CRAWLING))
-		to_chat(src, span_warning("You can't stand up while crawling under something!"))
-		return
-	//VENUS ADDITION END
 	var/get_up_time = 1 SECONDS
 
 	var/obj/item/organ/cyberimp/chest/spine/potential_spine = get_organ_slot(ORGAN_SLOT_SPINE)
@@ -844,7 +839,7 @@
 
 
 /mob/living/proc/rest_checks_callback()
-	if(resting || body_position == STANDING_UP || HAS_TRAIT(src, TRAIT_FLOORED) || HAS_TRAIT(src, TRAIT_UNDER_CRAWLING)) //VENUS EDIT - Added "|| HAS_TRAIT(src, TRAIT_UNDER_CRAWLING)"
+	if(resting || body_position == STANDING_UP || HAS_TRAIT(src, TRAIT_FLOORED))
 		return FALSE
 	return TRUE
 

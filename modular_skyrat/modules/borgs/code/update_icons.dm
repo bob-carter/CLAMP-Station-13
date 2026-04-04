@@ -59,10 +59,6 @@
 					icon_state = "[model.cyborg_base_icon]-sit"
 				if(ROBOT_REST_BELLY_UP)
 					icon_state = "[model.cyborg_base_icon]-bellyup"
-				//Splurt Edit start, I don't fucking know how to modularize it, I tried and failed
-				if(ROBOT_REST_SLEEP)
-					icon_state = "[model.cyborg_base_icon]-rest_deep"
-				//Splurt Edit end
 				else
 					icon_state = "[model.cyborg_base_icon]"
 			cut_overlays()

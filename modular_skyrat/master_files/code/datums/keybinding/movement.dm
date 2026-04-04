@@ -1,5 +1,3 @@
-// VENUS REMOVAL START - Replaced with crawl under component
-/*
 /datum/keybinding/movement/army_crawl
 	hotkey_keys = list("K")
 	name = "prone"
@@ -14,5 +12,3 @@
 	var/mob/living/carbon/crawler = user.mob
 	if(istype(crawler, /mob/living/carbon))
 		crawler.army_crawl()
-*/
-//VENUS REMOVAL END

@@ -33,7 +33,6 @@
 /obj/structure/bed/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/soft_landing)
-	AddComponent(/datum/component/crawl_under) //VENUS ADDITION
 	if(elevation)
 		AddElement(/datum/element/elevation, pixel_shift = elevation)
 	update_buckle_vars(dir)

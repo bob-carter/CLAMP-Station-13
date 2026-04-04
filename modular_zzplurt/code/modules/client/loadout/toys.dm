@@ -30,7 +30,7 @@
 	item_path = /obj/item/toy/plush/red_mut
 	ckeywhitelist = null
 
-/datum/loadout_item/toys/willico
-	name = "Snarky Bnyunn Action Figure"
-	item_path = /obj/item/toy/figure/willico
+/datum/loadout_item/toys/angry_man
+	name = "Angry Man Plushie"
+	item_path = /obj/item/toy/plush/sock_plush
 	ckeywhitelist = null
