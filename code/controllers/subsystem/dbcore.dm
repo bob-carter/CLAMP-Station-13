@@ -329,14 +329,22 @@ SUBSYSTEM_DEF(dbcore)
 /datum/controller/subsystem/dbcore/proc/InitializeRound()
 	CheckSchemaVersion()
 
+	// Always increment round ID from file
+	var/round_id_file = "data/round_id.txt"
+	var/last_round_id = 0
+	if(fexists(round_id_file))
+		last_round_id = text2num(file2text(round_id_file)) || 0
+	var/new_round_id = last_round_id + 1
+	rustg_file_write("[new_round_id]", round_id_file)
+	GLOB.round_id = "[new_round_id]"
+
 	if(!Connect())
 		return
 	var/datum/db_query/query_round_initialize = SSdbcore.NewQuery(/* SKYRAT EDIT CHANGE - MULTISERVER */
-		"INSERT INTO [format_table_name("round")] (initialize_datetime, server_name, server_ip, server_port) VALUES (Now(), :server_name, INET_ATON(:internet_address), :port)",
-		list("server_name" = CONFIG_GET(string/serversqlname), "internet_address" = world.internet_address || "0", "port" = "[world.port]") // SKYRAT EDIT CHANGE - MULTISERVER
+		"INSERT INTO [format_table_name("round")] (id, initialize_datetime, server_name, server_ip, server_port) VALUES (:round_id, Now(), :server_name, INET_ATON(:internet_address), :port)",
+		list("round_id" = GLOB.round_id, "server_name" = CONFIG_GET(string/serversqlname), "internet_address" = world.internet_address || "0", "port" = "[world.port]") // SKYRAT EDIT CHANGE - MULTISERVER
 	)
 	query_round_initialize.Execute(async = FALSE)
-	GLOB.round_id = "[query_round_initialize.last_insert_id]"
 	qdel(query_round_initialize)
 
 /datum/controller/subsystem/dbcore/proc/SetRoundStart()
