@@ -1,6 +1,6 @@
-## VENUS Station (Bubberstation Downstream)
+## Clamp Station (Bubberstation Downstream)
 
-[![CI Suite](https://github.com/VENUS-Station/V.E.N.U.S-tg/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/VENUS-Station/V.E.N.U.S-tg/actions/workflows/ci_suite.yml)
+[![CI Suite](https://github.com/Clamp-Station/V.E.N.U.S-tg/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/Clamp-Station/V.E.N.U.S-tg/actions/workflows/ci_suite.yml)
 
 [![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
@@ -9,7 +9,7 @@
 | Git / GitHub cheatsheet   | [https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833](https://www.notion.so/Git-GitHub-61bc81766b2e4c7d9a346db3078ce833) |
 | Guide to Modularization   | [./modular_zzplurt/readme.md](./modular_zzplurt/readme.md)                                                                             |
 | Website                   | [https://wiki.bubberstation.org/index.php?title=Main_Page](https://wiki.bubberstation.org/index.php?title=Main_Page)                   |
-| Code                      | [https://github.com/VENUS-Station/V.E.N.U.S-tg](https://github.com/VENUS-Station/V.E.N.U.S-tg)                                         |
+| Code                      | [https://github.com/Clamp-Station/V.E.N.U.S-tg](https://github.com/Clamp-Station/V.E.N.U.S-tg)                                         |
 | Wiki                      | [https://tgstation13.org/wiki/Main_Page](https://tgstation13.org/wiki/Main_Page)                                                       |
 | Codedocs                  | [https://skyrat-ss13.github.io/Skyrat-tg/](https://skyrat-ss13.github.io/Skyrat-tg/)                                                   |
 | V.E.N.U.S Station Discord | [https://discord.gg/kCuWJRdzb7](https://discord.gg/kCuWJRdzb7)                                                                         |
