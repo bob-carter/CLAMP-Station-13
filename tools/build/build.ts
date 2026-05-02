@@ -414,7 +414,7 @@ export const ServerTarget = new Juke.Target({
   parameters: [DmVersionParameter, PortParameter],
   dependsOn: [BuildTarget],
   executes: async ({ get }) => {
-    const port = get(PortParameter) || '1337';
+    const port = get(PortParameter) || '3000';
     const options = {
       dmbFile: `${DME_NAME}.dmb`,
       namedDmVersion: get(DmVersionParameter),
