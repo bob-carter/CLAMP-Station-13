@@ -25,9 +25,8 @@
 	display_statistics = FALSE
 
 /datum/vote/transfer_vote/can_mob_vote(mob/voter)
-	if(has_ran)
-		return TRUE
-	return ..()
+	// Always allow transfer vote participation, even on the first auto-transfer vote.
+	return TRUE
 
 /datum/vote/transfer_vote/finalize_vote(winning_option)
 	has_ran = TRUE
