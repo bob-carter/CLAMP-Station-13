@@ -193,6 +193,9 @@
 		randomize_language_if_on_station()
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_NEW_MACHINE, src)
 
+	if(language_holder)
+		language_holder.selected_language = /datum/language/common
+
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/machinery/LateInitialize()
